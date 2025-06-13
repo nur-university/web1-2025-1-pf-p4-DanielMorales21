@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marketplace</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/header.css"/>
+</head>
+<body>
+  <header class="main-header">
+    <div class="top-bar">
+      <h1 class="logo">Marketplace</h1>
+
+      <div class="chat-buttons">
+        <a href="chat-comprador.html" class="chat-btn"> Comprador</a>
+        <a href="chat-vendedor.html" class="chat-btn"> Vendedor</a>
+      </div>
+
+      <input type="text" placeholder="¿Qué estás buscando?" class="search-box">
+      <div class="user-actions">
+        <span><strong>Hola</strong>, Inicia tu sesión <a href="#">Ingresá</a> | <a href="#">Registrate</a></span>
+        <button class="icon-btn">❤️</button>
+        <button class="icon-btn cart">🛒</button>
+      </div>
+    </div>
+
+    <nav class="categoria-nav">
+      <button id="categorias">Categorías ⌄</button>
+        <ul id="categoria-lista" class="categoria-lista oculto">
+          <li><a href="anuncios.html?categoria=televisores">Televisores</a></li>
+          <li><a href="anuncios.html?categoria=celulares">Celulares</a></li>
+          <li><a href="anuncios.html?categoria=aires">Aires</a></li>
+          <li><a href="anuncios.html?categoria=notebooks">Notebooks</a></li>
+          <li><a href="anuncios.html?categoria=heladeras">Heladeras</a></li>
+          <li><a href="anuncios.html?categoria=lavarropas">Lavarropas</a></li>
+          <li><a href="anuncios.html?categoria=tablets">Tablets</a></li>
+          <li><a href="anuncios.html?categoria=ai">AI</a></li>
+          <li><a href="anuncios.html?categoria=superofertas">Superofertas</a></li>
+        </ul>
+    </nav>
+
+  </header>
+
+
+  <main>
+    <!-- Presentación -->
+    <section class="hero">
+      <h2>Compra y vende fácilmente</h2>
+      <p>Publica tus productos y encuentra lo que necesitas</p>
+    </section>
+
+    <!-- Categorías destacadas -->
+    <section class="categorias">
+      <h2>Categorías destacadas</h2>
+      <div class="grid">
+        <a href="anuncios.html" target="_blank" class="categoria-btn">Electrodomésticos</a>
+        <a href="anuncios.html" target="_blank" class="categoria-btn">Celulares</a>
+        <a href="anuncios.html" target="_blank" class="categoria-btn">Hogar</a>
+        <a href="anuncios.html" target="_blank" class="categoria-btn">Ropa</a>
+      </div>
+    </section>
+
+
+    <!-- Anuncios destacados -->
+    <section class="anuncios">
+      <h2>Anuncios destacados</h2>
+      <div class="grid">
+        <article class="anuncio">
+          <img src="Img/SamsungS24.jpg" alt="Producto 1" />
+          <h3>Celular Samsung</h3>
+          <p>Bs. 7000</p>
+          <a href="detalle.html" class="ver-btn">Ver</a>
+        </article>
+
+        <article class="anuncio">
+          <img src="Img/BiciMontañera.jpg" alt="Producto 2" />
+          <h3>Bicicleta Montañera</h3>
+          <p>Bs. 850</p>
+          <a href="detalle.html" class="ver-btn">Ver</a>
+        </article>
+
+        <article class="anuncio">
+          <img src="Img/IpadAir.jpg" alt="Producto 3" />
+          <h3>Ipad Air</h3>
+          <p>Us. 1000</p>
+          <a href="detalle.html" class="ver-btn">Ver</a>
+        </article>
+
+        <article class="anuncio">
+          <img src="Img/TvSamsung43.jpg" alt="Producto 4" />
+          <h3>Tv Samsung</h3>
+          <p>Bs 5000</p>
+          <a href="detalle.html" class="ver-btn">Ver</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Preguntas frecuentes -->
+    <section class="faq">
+      <h2>Preguntas Frecuentes</h2>
+      <details>
+        <summary>¿Cómo publico un anuncio?</summary>
+        <p>Primero debes registrarte, luego acceder al panel de usuario y usar la opción "Crear anuncio".</p>
+      </details>
+      <details>
+        <summary>¿Es gratuito usar la plataforma?</summary>
+        <p>Sí, publicar y buscar productos es completamente gratuito.</p>
+      </details>
+    </section>
+  </main>
+
+   <script>
+    // Mostrar/ocultar menú de categorías
+    const btnCategorias = document.getElementById('categorias');
+    const listaCategorias = document.getElementById('categoria-lista');
+
+    btnCategorias.addEventListener('click', () => {
+      listaCategorias.classList.toggle('oculto');
+    });
+  </script>
+
+  <footer>
+    <p>&copy; 2025 Mi Marketplace. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,125 @@
+/* ------------------ MOBILE FIRST ------------------ */
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.sidebar {
+  background: #f4f4f4;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  margin-bottom: 1rem;
+}
+
+.productos {
+  list-style: none;
+  padding: 0;
+}
+
+.producto-btn {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  background: #00aaff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chat-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.chat-header {
+  background: #00aaff;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+.mensaje {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.comprador {
+  background: #e1f5fe;
+  align-self: flex-start;
+}
+
+.vendedor {
+  background: #c8e6c9;
+  align-self: flex-end;
+}
+
+.chat-input {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.chat-input button {
+  background: #00aaff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .chat-container {
+    flex-direction: row;
+  }
+
+  .sidebar {
+    width: 250px;
+    height: 100vh;
+  }
+
+  .chat-area {
+    width: calc(100% - 250px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .chat-container {
+    flex-direction: row;
+  }
+
+  .sidebar {
+    width: 300px;
+    height: 100vh;
+  }
+
+  .chat-area {
+    width: calc(100% - 300px);
+  }
+}

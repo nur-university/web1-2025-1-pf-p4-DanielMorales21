@@ -1,0 +1,134 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografía base */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background: white;
+  color: #333;
+  padding: 1rem;
+}
+
+/* Secciones */
+section {
+  margin-bottom: 2rem;
+}
+
+.hero {
+  background: #e0f0ff;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.categoria-lista a {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  background-color: #eee;
+  color: #333;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.categoria-lista a:hover {
+  background-color: #ddd;
+}
+
+
+.categoria,
+.anuncio {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.categoria-btn {
+  display: inline-block;
+  background-color: #0077cc;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.categoria-btn:hover {
+  background-color: #005fa3;
+}
+
+
+.anuncio img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.ver-btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.4rem 1rem;
+  background-color: #0077cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.ver-btn:hover {
+  background-color: #005fa3;
+}
+
+
+/* FAQ */
+details {
+  margin-bottom: 1rem;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 2rem;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
+
+/* Responsive Design - Mobile First */
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
